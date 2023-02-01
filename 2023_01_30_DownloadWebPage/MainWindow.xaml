@@ -1,0 +1,21 @@
+﻿<Window x:Class="_2023_01_30_DownloadWebPage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2023_01_30_DownloadWebPage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textBoxURL" HorizontalAlignment="Left" Margin="153,40,0,0" TextWrapping="Wrap" Text="http://www.gramota.ru/" VerticalAlignment="Top" Width="599" Height="23" VerticalContentAlignment="Center"/>
+        <Button x:Name="buttonDownload" Content="Прочитать страницу!" HorizontalAlignment="Center" VerticalAlignment="Top" Width="243" Click="buttonDownload_Click" Margin="0,78,0,0" Height="29"/>
+        <Label Content="Адрес сайта:" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label Content="Код сайта:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="textBoxPage"  HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Width="780" Height="186" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textBoxCode" HorizontalAlignment="Left" Margin="153,121,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="599" Height="26" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textBoxFileName" HorizontalAlignment="Left" Margin="153,350,0,0" TextWrapping="Wrap" Text="Page.html" VerticalAlignment="Top" Width="599" Height="25" VerticalContentAlignment="Center"/>
+        <Label Content="Имя файла:" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Width="138"/>
+        <Button x:Name="buttonFileName" Content="Сохранить страницу в файл" HorizontalAlignment="Center" Margin="0,386,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.216,0.401" Width="244" Height="26" Click="textBoxFileName_Click"/>
+
+    </Grid>
+</Window>
