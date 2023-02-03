@@ -44,6 +44,13 @@ namespace _2023_01_30_DownloadWebPage
                 return;
             }
 
+            // проверка на пустую строку
+            if (!Uri.IsWellFormedUriString(textBoxURL.Text, UriKind.Absolute))
+            {
+                MessageBox.Show("Строка запроса не соответствует адресу!");
+                return;
+            }
+
             // Запрос получения данных страницы
             try
             {
